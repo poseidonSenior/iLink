@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mobile-style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img class="img_logo logo_L" src="img/header/Vector L.svg" alt="">
+                    <img class="img_logo" src="img/header/Vector R.svg" alt="">
+                </div>
+                <ul class="menu">
+                    <li><a class="menu_item" href="#Jane Doe" name="">Jane Doe</a></li>
+                    <li><a class="menu_item" href="#Tell us about yourself">Tell us about yourself</a></li>
+                    <li><a class="menu_item" href="#Slider">Slider</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <section class="article">
+        <div class="container">
+            <a name="Jane Doe"></a>
+            <div class="person">
+                <div class="girl">
+                    <img class="img_girl" src="img/art1/girl.png" alt="">
+                    <img class="sm Q" src="img/art1/smQ.svg" alt="">
+                    <img class="bg Q" src="img/art1/bgQ.svg" alt="">
+                    <img class="mobile_sm mobi" src="img/mobile_img/person/mobile_smQ.svg">
+                    <img class="mobile_bg mobi" src="img/mobile_img/person/mobile_bgQ.svg">
+                </div>
+                <div class="about">
+                    <p class="name">Jane Doe</p>
+                    <div class="about_f1 ab_name">
+                        <p class="DofB">Date of birth</p>
+                        <p class="date">21.04.2001</p>
+                    </div>
+
+                    <div class="about_f2 ab_name">
+                        <p class="Gdr">Gender</p>
+                        <p class="gender">Female</p>
+                    </div>
+
+                    <div class="about_f3 ab_name">
+                        <p class="Ctry">Country</p>
+                        <p class="country">Corea</p>
+                    </div>
+                    <p class="aboutMe">About me</p>
+
+                    <p class="p_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="article1">
+        <div class="container">
+            <a name="Tell us about yourself"></a>
+            <div class="fill">
+                <div class="headText">
+                    Tell us about yourself
+                </div>
+
+                <img src="img/mobile_img/form/bg.svg" class="tell_img_us-bg mobi">
+                <img src="img/mobile_img/form/sm.svg" class="tell_img_us-sm mobi">
+
+                <div class="fill_form">
+                    <form action="" method="post" class="form">
+                        <div class="f1 group">
+                            <label class="lab_form">Your name</label>
+                            <input data-rule="text" type="text" placeholder="Tell us your name" value=""
+                                class="in_put in_put-border">
+                        </div>
+
+                        <div class="f2 group">
+                            <label class="lab_form">Your gender</label>
+                            <img class="Q arrow" src="img/art2/arrow.png" alt="">
+                            <select>
+                                <option class="sel_option" value="" disabled selected>Chose your gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="f3 group">
+                            <label class="lab_form">Your country</label>
+                            <input data-rule="text" type="text" placeholder="Where are you from?" value=""
+                                class="in_put in_put-border">
+                        </div>
+
+                        <div class="f4 group">
+                            <label class="lab_form">Your City</label>
+                            <input data-rule="text" type="text" placeholder="Your native city" value=""
+                                class="in_put in_put-border">
+                        </div>
+
+                        <div class="f5 group">
+                            <label class="lab_form">Your date of birth</label>
+                            <input data-rule="date" type="text" class="in_put date_mask in_put-border" value=""
+                                placeholder="dd.mm.yyyy">
+                        </div>
+
+                        <div class="f6 ">
+                            <label class="labelF text_label">Proof your identity with some documents</label>
+                            <label class="labelF file_label"><input accept="image/*" onchange="showFile()" type="file"
+                                    id="in_file" name="file" alt="">Add document</label>
+                        </div>
+
+                        <div class="info_file">
+                            <img class="Q del_img" src="img/art2/delete.svg" onclick="deleting_a_picture()">
+                            <img id="blah" src="" class="info_img">
+                            <p class="fst_tx"></p>
+                            <p class="snd_tx"></p>
+                        </div>
+
+                        <div class="f7">
+                            <input disabled class="btn" type="button" value="Send info" onclick="completFunc()">
+                        </div>
+                        <div class="div_completed">
+                            <img class="Q compl_img" src="img/art2/comleted.png" alt="">
+                            <p class="completed">Completed</p>
+                        </div>
+                    </form>
+                </div>
+                <img src="img/art2/qvad1L.png" class="Q qvad1L qvad">
+                <img src="img/art2/qvad2L.png" class="Q qvad2L qvad">
+                <img src="img/art2/qvad3L.png" class="Q qvad3L qvad">
+                <img src="img/art2/qvad1R.png" class="Q qvad1R qvad">
+                <img src="img/art2/qvad2R.png" class="Q qvad2R qvad">
+                <img src="img/art2/qvad3R.png" class="Q qvad3R qvad">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot container">
+            <a name="Slider"></a>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="img/mobile_img/footer/footer_img.png" class="fade_mobile">
+                    <img src="img/footer/footer_img.png" class="fade_img">
+                    <div class="up_text">Slide this photo</div>
+                    <div class="down_text">Duis aute irure dolor in reprehenderit in voluptate velit esse <br>cillum
+                        dolore eu fugiat nulla pariatur</div>
+
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/mobile_img/footer/footer_img.png" class="fade_mobile">
+                    <img src="img/footer/footer_img.png" class="fade_img">
+                    <div class="up_text">Slide this photo</div>
+                    <div class="down_text">Duis aute irure dolor in reprehenderit in voluptate velit esse<br> cillum
+                        dolore eu fugiat nulla pariatur</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/mobile_img/footer/footer_img.png" class="fade_mobile">
+                    <img src="img/footer/footer_img.png" class="fade_img">
+                    <div class="up_text">Slide this photo</div>
+                    <div class="down_text">Duis aute irure dolor in reprehenderit in voluptate velit esse <br>cillum
+                        dolore eu fugiat nulla pariatur</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div class="div_dot" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
